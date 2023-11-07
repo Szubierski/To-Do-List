@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Lista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="toDoApp">
+        <header class="head">
+            <h1>ToDo List</h1>
+            <section class="inputs">
+                <input type="text" class="toDoInput" placeholder="Wpisz treść zadania...">
+                <button class="addBtn">ADD</button>
+            </section>
+            <p class="errorMsg"></p>
+        </header>
+        <section class="tasks">
+            <h2>Lista zadań</h2>
+            <section class="taskList">
+                <p class="defaultTask">BRAK ZADAŃ</p>
+            </section>
+            <div class="popup display">
+                <p class="popupInfo">EDYTUJ ZADANIE</p>
+                <input type="text" class="newText" placeholder="Wpisz nowe zadanie">
+                <div class="buttons">
+                    <button class="popBtn confirmBtn">CONFIRM</button>
+                    <button class="popBtn cancelBtn">CANCEL</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
